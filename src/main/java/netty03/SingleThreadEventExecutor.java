@@ -13,7 +13,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 /**
  * @author Joe Lee
  * @date
- * @Description
+ * @Description 这个类，只能完成接收连接和IO事件 。连接完成了要发送和接收消息，这个类目前还做不到。
+ * 因为 Accept，Connect 事件都需要 ServerSocketChannel 和 SocketChannel
  */
 public abstract class  SingleThreadEventExecutor implements Executor {
 
